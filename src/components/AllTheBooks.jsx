@@ -6,13 +6,12 @@ import { Row, Col } from 'react-bootstrap';
 
 
 function AllTheBooks() {
-
     return (
         <Container>
             <Row>
                 {books.fantasy.map((book) => {
                     return (
-                        <Col key={book.asin}>
+                        <Col key={book.asin} sm={12} md={4} lg={3}>
                             <Card>
                                 <Card.Img variant="top" src={book.img} />
                                 <Card.Body>
